@@ -2,20 +2,20 @@ package ru.vsu.cs;
 
 import java.util.Scanner;
 
-public class Main {
+public class Program {
 
-    public static void main(String[] args)
+    public static void Main(String[] args)
     {
-        int x1 = readVariables("x1");
-        int x2 = readVariables("x2");
-        int x3 = readVariables("x3");
+        int x1 = ReadVariables("x1");
+        int x2 = ReadVariables("x2");
+        int x3 = ReadVariables("x3");
 
         int mid = Mid(x1, x2, x3);
 
         System.out.println(mid);
     }
 
-    public static int readVariables(String name)
+    public static int ReadVariables(String name)
     {
         Scanner scanner = new Scanner(System.in);
 
@@ -37,7 +37,7 @@ public class Main {
     {
         int min = Math.min(Math.min(x1,x2), x3);
 
-        return (min);
+        return min;
     }
 
     public static int Max(int x1, int x2, int x3)
